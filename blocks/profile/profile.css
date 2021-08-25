@@ -1,0 +1,11 @@
+@import url('./__avatar/profile__avatar.css');
+@import url('./__name/profile__name.css');
+
+.profile {
+  color: #000;
+  display: grid;
+  grid-template-areas: "avatar name";
+  grid-template-columns: 48px 1fr;
+  grid-gap: 1em;
+  margin-bottom: 1em;
+}

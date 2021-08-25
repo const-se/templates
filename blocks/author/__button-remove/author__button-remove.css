@@ -1,0 +1,20 @@
+.author__button-remove {
+  align-self: center;
+  background-color: #000;
+  border: 2px solid #000;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 26px;
+  grid-area: remove;
+  height: 32px;
+  line-height: 1;
+  transition: all 0.25s ease-in-out;
+  width: 32px;
+}
+
+.author__button-remove:hover {
+  background-color: #fff;
+  color: #000;
+}

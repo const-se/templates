@@ -1,0 +1,9 @@
+.form__field {
+  border: 2px solid #000;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+  display: block;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  width: 100%;
+}

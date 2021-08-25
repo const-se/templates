@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <title>Title</title>
+  <link rel="stylesheet" href="./pages/index.css"/>
+</head>
+<body class="page">
+<div class="page__content">
+  <header class="header">
+    <h1 class="header__title">Лента ваших новостей</h1>
+  </header>
+  <main class="content">
+    <section class="posting content__section">
+      <form class="form posting__form">
+        <div class="profile posting__profile">
+          <div class="profile__avatar"></div>
+          <h2 class="profile__name"></h2>
+        </div>
+        <textarea name="text" class="form__field form__field_type_text" placeholder="Напишите вашу новость"></textarea>
+        <button type="submit" class="form__button-submit">Опубликовать</button>
+      </form>
+    </section>
+    <section class="posts content__section">
+      <div class="post">
+        <div class="author post__author">
+          <div class="author__avatar" style="background-image: url('./images/avatar2.jpg')"></div>
+          <h3 class="author__name">Гавриил Подвыподвертов</h3>
+          <button type="button" class="author__button-remove">&times;</button>
+        </div>
+        <p class="post__text">Добро пожаловать на лайвкодинг!</p>
+        <p class="post__time">26.08.2021 9:00</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__copyright">&copy; 2021 Яндекс.Практикум</p>
+  </footer>
+</div>
+<script src="./scripts/index.js"></script>
+</body>
+</html>

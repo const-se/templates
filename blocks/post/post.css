@@ -1,0 +1,9 @@
+@import url('./__author/post__author.css');
+@import url('./__text/post__text.css');
+@import url('./__time/post__time.css');
+
+.post {
+  background-color: #fff;
+  border-radius: 1em;
+  padding: 1em 2em;
+}

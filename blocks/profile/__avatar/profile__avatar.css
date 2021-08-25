@@ -1,0 +1,10 @@
+.profile__avatar {
+  background-position: center center;
+  background-size: cover;
+  border: 2px solid #000;
+  border-radius: 50%;
+  box-sizing: border-box;
+  grid-area: avatar;
+  height: 48px;
+  width: 48px;
+}

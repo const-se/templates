@@ -1,0 +1,8 @@
+@import url('./__form/posting__form.css');
+
+.posting {
+  background-color: #fff;
+  border-radius: 1em;
+  padding: 1em 2em;
+  margin-bottom: 2em;
+}
