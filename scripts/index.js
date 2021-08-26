@@ -14,16 +14,16 @@ const postingTextElement = document.querySelector('.form__field_type_text');
 
 const initialPosts = [
     {
-        avatar: './images/avatar2.jpg',
-        name: 'Гавриил Подвыподвертов',
-        text: 'Добро пожаловать на лайвкодинг!',
-        time: new Date('2021-08-26T20:00:00')
-    },
-    {
         avatar: './images/avatar3.jpg',
         name: 'Антонина Барбидокская',
         text: 'Приветствую всех вас!',
         time: new Date('2021-08-26T19:30:00')
+    },
+    {
+        avatar: './images/avatar2.jpg',
+        name: 'Гавриил Подвыподвертов',
+        text: 'Добро пожаловать на лайвкодинг!',
+        time: new Date('2021-08-26T20:00:00')
     }
 ];
 const postsElement = document.querySelector('.posts');
