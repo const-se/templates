@@ -23,22 +23,23 @@
         <button type="submit" class="form__button-submit">Опубликовать</button>
       </form>
     </section>
-    <section class="posts content__section">
-      <div class="post">
-        <div class="author post__author">
-          <img class="author__avatar" src="./images/avatar2.jpg" alt="Avatar"/>
-          <h3 class="author__name">Гавриил Подвыподвертов</h3>
-          <button type="button" class="author__button-remove">&times;</button>
-        </div>
-        <p class="post__text">Добро пожаловать на лайвкодинг!</p>
-        <p class="post__time">26.08.2021 9:00</p>
-      </div>
-    </section>
+    <section class="posts content__section"></section>
   </main>
   <footer class="footer">
     <p class="footer__copyright">&copy; 2021 Яндекс.Практикум</p>
   </footer>
 </div>
+<template id="post-template">
+  <div class="post">
+    <div class="author post__author">
+      <img class="author__avatar" src="" alt=""/>
+      <h3 class="author__name"></h3>
+      <button type="button" class="author__button-remove">&times;</button>
+    </div>
+    <p class="post__text"></p>
+    <p class="post__time"></p>
+  </div>
+</template>
 <script src="./scripts/index.js"></script>
 </body>
 </html>

@@ -25,11 +25,19 @@ const initialPosts = [
     }
 ];
 const postsElement = document.querySelector('.posts');
+const postTemplate = document.querySelector('#post-template').content;
 
 // Functions
 
-const addPost = (data) => {
-    console.log(data); // TODO
+const addPost = (post) => {
+    const postElement = postTemplate.querySelector('.post').cloneNode(true);
+    postElement.querySelector('.author__avatar').src = post.avatar;
+    postElement.querySelector('.author__avatar').alt = 'Avatar';
+    postElement.querySelector('.author__name').textContent = post.name;
+    postElement.querySelector('.post__text').textContent = post.text;
+    postElement.querySelector('.post__time').textContent = formatDate(post.time);
+
+    postsElement.prepend(postElement);
 };
 
 const postingFormHandler = (event) => {
@@ -58,3 +66,7 @@ const formatDate = (date) => {
 // Event listeners
 
 postingFormElement.addEventListener('submit', postingFormHandler);
+
+initialPosts.forEach((post) => {
+    addPost(post);
+});
