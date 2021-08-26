@@ -30,11 +30,11 @@ const postsElement = document.querySelector('.posts');
 
 // Functions
 
-function post(data) {
+const post = (data) => {
     console.log(data); // TODO
 }
 
-function postingFormHandler(event) {
+const postingFormHandler = (event) => {
     event.preventDefault();
 
     post({
@@ -47,7 +47,7 @@ function postingFormHandler(event) {
     postingTextElement.value = '';
 }
 
-function formatDate(date) {
+const formatDate = (date) => {
     const day = date.getDate();
     const month = ('0' + (date.getMonth() + 1)).slice(-2);
     const year = date.getFullYear();
