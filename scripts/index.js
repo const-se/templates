@@ -29,6 +29,10 @@ const postTemplate = document.querySelector('#post-template').content;
 
 // Functions
 
+const removePostHandler = (event) => {
+    event.target.closest('.post').remove();
+};
+
 const addPost = (post) => {
     const postElement = postTemplate.querySelector('.post').cloneNode(true);
     postElement.querySelector('.author__avatar').src = post.avatar;
@@ -36,6 +40,7 @@ const addPost = (post) => {
     postElement.querySelector('.author__name').textContent = post.name;
     postElement.querySelector('.post__text').textContent = post.text;
     postElement.querySelector('.post__time').textContent = formatDate(post.time);
+    postElement.querySelector('.author__button-remove').addEventListener('click', removePostHandler);
 
     postsElement.prepend(postElement);
 };
