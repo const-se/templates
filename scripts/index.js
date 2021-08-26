@@ -1,9 +1,7 @@
 // Profile
 
-const profileAvatar = './images/avatar.jpg';
-const profileName = 'Иннокентий Константинопольский';
-const profileAvatarElement = document.querySelector('.profile__avatar');
-const profileNameElement = document.querySelector('.profile__name');
+const profileAvatar = document.querySelector('.profile__avatar').src;
+const profileName = document.querySelector('.profile__name').textContent;
 
 // Posting form
 
@@ -57,9 +55,6 @@ const formatDate = (date) => {
     return `${day}.${month}.${year} ${hours}:${minutes}`;
 };
 
-// App
-
-profileAvatarElement.style.backgroundImage = `url('${profileAvatar}')`;
-profileNameElement.textContent = profileName;
+// Event listeners
 
 postingFormElement.addEventListener('submit', postingFormHandler);

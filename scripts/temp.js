@@ -2,7 +2,7 @@ const byInsertAdjacentHTML = (data) => {
     const html =
         `<div class="post">
           <div class="author post__author">
-            <div class="author__avatar" style="background-image: url('${data.avatar}')"></div>
+            <img class="author__avatar" src="${data.avatar}" alt="Avatar"/>
             <h3 class="author__name">${data.name}</h3>
             <button type="button" class="author__button-remove">&times;</button>
           </div>
@@ -21,9 +21,10 @@ const byCreateElement = (data) => {
     authorElement.classList.add('post__author');
     postElement.append(authorElement);
 
-    const avatarElement = document.createElement('div');
+    const avatarElement = document.createElement('img');
     avatarElement.classList.add('author__avatar');
-    avatarElement.style.backgroundImage = `url('${data.avatar}')`;
+    avatarElement.src = data.avatar;
+    avatarElement.alt = 'Avatar';
     authorElement.append(avatarElement);
 
     const nameElement = document.createElement('h3');
@@ -54,7 +55,7 @@ const byTemplate = (data) => {
     const postTemplate = document.querySelector('#post-template').content;
 
     const postElement = postTemplate.querySelector('.post').cloneNode(true);
-    postElement.querySelector('.author__avatar').style.backgroundImage = `url('${data.avatar}')`;
+    postElement.querySelector('.author__avatar').src = data.avatar;
     postElement.querySelector('.author__name').textContent = data.name;
     postElement.querySelector('.post__text').textContent = data.text;
     postElement.querySelector('.post__time').textContent = formatDate(data.time);
