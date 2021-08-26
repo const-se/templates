@@ -30,22 +30,22 @@ const postsElement = document.querySelector('.posts');
 
 // Functions
 
-const post = (data) => {
+const addPost = (data) => {
     console.log(data); // TODO
-}
+};
 
 const postingFormHandler = (event) => {
     event.preventDefault();
 
-    post({
+    addPost({
         avatar: profileAvatar,
         name: profileName,
         text: postingTextElement.value,
         time: new Date()
     });
 
-    postingTextElement.value = '';
-}
+    postingFormElement.reset();
+};
 
 const formatDate = (date) => {
     const day = date.getDate();
@@ -55,7 +55,7 @@ const formatDate = (date) => {
     const minutes = ('0' + date.getMinutes()).slice(-2);
 
     return `${day}.${month}.${year} ${hours}:${minutes}`;
-}
+};
 
 // App
 
